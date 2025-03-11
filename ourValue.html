@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Goggle -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- FlowBiteCss -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="font-[Poppins]  h-screen"></body>>
+    <header>
+        <nav class="fixed top-0 left-0 w-full z-50 nav-bg border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="assets/imgs/logo.png" class="h-14" alt="" />
+            </a>
+            <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+                <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="home.html" class="block py-2 px-3 text-gray-800 rounded-sm md:bg-transparent md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-gray-800 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Solutions<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                        </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                                <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                                </li>
+                                <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                                </li>
+                                <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                                </li>
+                            </ul>
+                            <div class="py-1">
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="ourValue.html" class="block py-2 px-3 text-gray-800 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Our Value</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-gray-800 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Our People</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-gray-800 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Career</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-gray-800 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- <button class="px-[25px] py-[5px] border border-black rounded-xl md:block hidden">Get Demo</button> -->
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="w-full h-[575px] md:h-[525px]  relative top-[110px] md:top-[70px] lg:top-[100px]">
+        <div class="h-[80px] relative"></div>
+        <div class="w-full flex justify-center items-center relative">
+            <img class="w-full h-[575px] md:h-[525px] absolute" src="assets/imgs/Frame68.png" alt="">
+            <div class=" relative w-full flex flex-col gap-5 md:gap-10 items-center justify-center ">
+                <div class=""><button class="px-4 py-2 bg-white text-black rounded">Our Value</button></div>
+                <div class="text-center"><h1 class="text-[24px] md:text-4xl text-linear font-semibold">Empowering Education, Transforming Businesses</h1></div>
+                <div class="w-full text-center md:px-[100px]">
+                    <p class="text-[18px] md:text-[20px]">At UN-Tech, we believe in empowering educational institutions and manufacturing businesses with cutting-edge digital solutions. Our commitment to innovation drives everything we do.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transforming Education with ERP -->
+    <section class="w-full md:px-[150px] px-[10px]">
+        <div class="w-full  h-[738px] md:h-[475px] flex justify-center items-center">
+            <div class="flex w-full flex-col md:flex-row md:gap-10 ">
+                <div class="md:h-[315px] px-[40px] md:px-0 md:w-1/2 flex items-center justify-center">
+                    <img src="assets/imgs/Group.png" alt="">
+                </div>
+                <div class="md:h-[315px] md:w-1/2">
+                    <div class="flex flex-col gap-5">
+                        <h1 class="text-linear font-bold text-[24px] md:text-[30px]">Transforming Education with ERP</h1>
+                        <div><p class="md:text-[16px]">We empower schools and universities with a comprehensive Educational ERP system, including:</p></div>
+                        <div class="flex">
+                            <img src="assets/imgs/Icon-landing.png" alt="">
+                            <p>Learning Management System (LMS) </p>
+                        </div>
+                        <div class="flex">
+                            <img src="assets/imgs/Icon-landing.png" alt="">
+                            <p>Library Management</p>
+                        </div>
+                        <div class="flex">
+                            <img src="assets/imgs/Icon-landing.png" alt="">
+                            <p>Accounting & Finance </p>
+                        </div>
+                        <div class="flex">
+                            <img src="assets/imgs/Icon-landing.png" alt="">
+                            <p>School Registration & Enrollment</p>
+                        </div>
+                        <div class="flex">
+                            <img src="assets/imgs/Icon-landing.png" alt="">
+                            <p>Hostel Management </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scalable & Future Solution -->
+    <section class="w-full md:px-[100px] px-[10px]">
+        <div class="w-full h-[950px] md:h-[720px] flex flex-col gap-5 md:gap-10 justify-center">
+            <div class="flex flex-col-reverse gap-5 md:gap-0 md:flex-row ">
+                <div class="md:w-1/2 flex flex-col justify-center gap-3 md:gap-5">
+                    <h1 class="md:text-[30px] text-linear">Scalable & Future-Proof Solutions</h1>
+                    <div class="pe-28">
+                        <p>Our technology grows with institutions and businesses, ensuring long-term success and adaptability.</p>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center ">
+                    <img class="md:h-full h-[224px] object-cover" src="assets/imgs/Frame49.png" alt="">
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row gap-5 md:gap-0 ">
+                <div class="md:w-1/2 flex justify-center ">
+                    <img class="md:h-full h-[224px] object-cover" src="assets/imgs/Frame49.png" alt="">
+                </div>
+                <div class="md:w-1/2 flex flex-col justify-center gap-3 md:gap-5">
+                    <h1 class="md:text-[30px] text-linear">Data Security & Compliance</h1>
+                    <div class="pe-28">
+                        <p>We prioritize high-security standards, ensuring sensitive data protection and system reliability.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Driven Apporach -->
+    <section class="bg-main-linear">
+        <div class="md:h-[728px] h-[1186px] md:px-[100px] flex items-center ">
+            <div class="w-full  flex flex-col gap-10 justify-center items-center ">
+                <h1 class="md:text-[30px] text-[24px] font-bold text-linear">Customer-Driven Approach</h1>
+                <div class="text-center"><p>We collaborate closely with schools and businesses to deliver tailored solutions that meet their unique needs.</p></div>
+                <div class="flex w-full md:flex-row md:justify-between md:gap-0 flex-col items-center gap-10">
+                    <div ><img class="" src="assets/imgs/Group 5.png" alt=""></div>
+                    <div ><img src="assets/imgs/Group 6.png" alt=""></div>
+                    <div ><img src="assets/imgs/Group 7.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Email -->
+    <section class="w-full md:px-[100px] px-[10px]">
+        <div class="w-full relative flex items-center lg:mt-5">
+            <img class="w-full lg:h-[350px] h-[306px]  mt-3 absolute" src="assets/imgs/frame.png" alt="">
+            <div class="relative w-full  lg:h-72 h-full  rounded-3xl flex flex-col item-center justify-center gap-5">
+                <div class="flex justify-center">
+                   <p class="md:italic  text-linear md:text-4xl text-2xl text-center md:px-0 px-[20px] font-bold">Make your business grow online seamlessly </p>
+                </div>                        
+                <div class="text-center lg:mt-5 md:px-0 px-[20px]">
+                    <p class="lg:px-[200px] sm:text-[14px] lg:text-[16px] sm:px-[50px] text-black">Stay informed about our latest updates, product launches, and industry events, where we showcase innovations and connect with experts</p>
+                </div>
+                <div class="flex justify-center md:px-0 px-[20px]">
+                    <!-- Email Input Box -->
+                    <div class="md:w-[580px] md:h-[56px]">
+                        <div class="flex items-center justify-center w-full h-full">
+                        <input class="border border-blue-400 rounded-s-lg md:h-full md:w-2/3 px-6  w-[211px] h-[56px]" type="text" name="" id="" placeholder="youremail@gmail.com">
+                        <button class="bg-gradient md:h-full md:w-1/3 w-[128px] h-[56px] rounded-e-lg text-white md:px-0 px-[3px]">Get a quotation</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section>
+        <div class="flex flex-col md:flex-row w-full h-[296px] mt-[200px] px-10 md:px-[150px] md:gap-0 gap-10">
+          <div class="w-full md:w-1/3 flex flex-col gap-[10px]">
+            <div><img class="h-14" src="assets/imgs/logo.png" alt=""></div>
+            <p>09 - 53218402</p>
+            <p>No 345, 8th Qurter, Chan Aye Thazan <br> Tsp, Mandalay, Myanmar</p>
+          </div>
+          <div class="w-full md:w-1/3">
+            <div class="w-full flex">
+                <div class="w-1/2 flex flex-col justify-start">
+                    <p class="text-linear ms-1">Contents</p>
+                    <a href="#" class="rounded-md px-3 py-2 text-sm font-bold text-linear hover:text-white  hover:bg-gray-700 " aria-current="page">Home</a>
+                      <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-text-main hover:bg-gray-700 hover:text-white">Our Solutions</a>
+                      <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-text-main hover:bg-gray-700 hover:text-white">New & Events</a>
+                      <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-text-main hover:bg-gray-700 hover:text-white">About Us</a>
+                      <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-text-main hover:bg-gray-700 hover:text-white">Contact Us</a>
+                  </div>
+                  <div class="w-1/2 flex flex-col justify-start">
+                    <p class="text-linear ms-1">Resources</p>
+                      <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-text-main hover:bg-gray-700 hover:text-white">Help Center</a>
+                      <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-text-main hover:bg-gray-700 hover:text-white">F&Qs</a>
+                      <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-text-main hover:bg-gray-700 hover:text-white">Privacy</a>
+                      <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-text-main hover:bg-gray-700 hover:text-white">Policy</a>
+                  </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/3">
+            <div class="flex flex-col gap-[10px]">
+              <p class="text-linear ms-1">Social Meida</p>
+              <div class="flex">
+                <a href=""><img src="assets/imgs/youtube.png" alt=""></a>
+                <a href=""><img src="assets/imgs/facebook.png" alt=""></a>
+                <a href=""><img src="assets/imgs/linkedin.png" alt=""></a>
+              </div>
+              <p>Copyright © 2025 Text, Inc. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+</body>
+</html>
