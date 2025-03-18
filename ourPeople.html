@@ -36,13 +36,13 @@
                         <a href="ourValue.html" class="block py-2 px-3 text-gray-800 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Our Value</a>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 px-3 text-gray-800 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Our People</a>
+                        <a href="ourPeople.html" class="block py-2 px-3 text-gray-800 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Our People</a>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 px-3 text-gray-800 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Career</a>
+                        <a href="ourCareer.html" class="block py-2 px-3 text-gray-800 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Career</a>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 px-3 text-gray-800 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact Us</a>
+                        <a href="ourContact.html" class="block py-2 px-3 text-gray-800 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -69,7 +69,7 @@
 
     <!-- Teacher -->
     <section>
-        <div class="md:h-[800px] h-[1938px]relative top-[45px] md:py-10 md:px-[150px]">
+        <div class="md:h-[800px] h-[1938px] relative top-[45px] md:py-10 md:px-[150px]">
             <div>
                 <div class="w-full flex flex-col">
                     <!-- Head -->
@@ -250,6 +250,18 @@
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentPage = window.location.pathname.split("/").pop(); // Get the current filename
+            const navLinks = document.querySelectorAll("nav ul li a"); // Select all nav links
+        
+            navLinks.forEach((link) => {
+            if (link.getAttribute("href") === currentPage) {
+                link.classList.add("text-linear", "font-bold"); // Apply active styles
+            }
+            });
+        });
+    </script>
     
 </body>
 </html>

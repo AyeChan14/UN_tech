@@ -38,11 +38,20 @@ body{
     content: "analyze"; /* Default text */
     animation: textRotate 2s infinite steps(1);
 }
+.bg-custom-gradient {
+    background: linear-gradient(0deg, rgba(229, 239, 255, 0.18), rgba(229, 239, 255, 0.18)), 
+                linear-gradient(302.37deg, rgba(46, 49, 146, 0) -4.33%, rgba(46, 49, 146, 0.0828) 103.81%);
+  }
+  
 
 /* Buttom Gradient */
 .btn{
     background: linear-gradient(to right,#0071BD,#2E3192);
     color: aliceblue;
+}
+
+.bg-box{
+    background-color: #EEF1F9;
 }
 .box{
     background-color: #B7CCEA;

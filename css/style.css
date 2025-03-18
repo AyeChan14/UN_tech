@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+.text-linear {
+    @apply bg-gradient-to-r from-[#0071BD] to-[#2E3192];
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
