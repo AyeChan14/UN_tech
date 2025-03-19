@@ -42,6 +42,12 @@ body{
     background: linear-gradient(0deg, rgba(229, 239, 255, 0.18), rgba(229, 239, 255, 0.18)), 
                 linear-gradient(302.37deg, rgba(46, 49, 146, 0) -4.33%, rgba(46, 49, 146, 0.0828) 103.81%);
   }
+
+  .spane {
+    opacity: 1;
+    transform: translateY(20px); /* Initially, the words are slightly down */
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
   
 
 /* Buttom Gradient */
@@ -110,5 +116,29 @@ body{
       transform: translateX(0px);
     }
 }
-  
+ 
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.fade-in{
+    animation: fadeIn 1s ease-in;
+}
 
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+.fade-out{
+    animation: fadeOut 1s ease-out;
+    
+}
